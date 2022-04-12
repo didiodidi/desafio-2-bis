@@ -16,11 +16,19 @@ const productos = [
         cantidad:1
     },
     {
-        id:2,
+        id:3,
         nombre:"Escultura",
         desc:"Escultura",
         precio:2000,
         img:'src/img/escultura3.jpg',
+        cantidad:1
+    },
+    {
+        id:4,
+        nombre:"Escultura",
+        desc:"Escultura",
+        precio:2000,
+        img:'src/img/escultura4.jpg',
         cantidad:1
     }
 ]

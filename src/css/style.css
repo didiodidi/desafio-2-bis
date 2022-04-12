@@ -24,17 +24,30 @@ header h1{
     left: 20px;
 }
 
+
 #producto-contenedor {
     display: grid;
     gap: 1rem;
     max-width: 70rem;
-    margin: 70px auto;
+    margin: 90px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.card {
+
+.card .card-image .card-title {
+    color: dodgerblue;
+    position: unset;
+}  
+
+.card{
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 25px 0px;
+}
+
+
+/* .card {
     max-width: 30%;
     padding: 10px;
     border-radius: 15px;
@@ -45,10 +58,7 @@ p{
     line-height: 1.5px;
 }
 
-.card .card-image .card-title {
-    color: dodgerblue;
-    position: unset;
-} 
+
 
 .modal-carrito {
     position: relative;
@@ -68,5 +78,5 @@ p{
 .modal-carrito h3 {
     color: dodgerblue;
     padding-bottom: 5px;
-}
+}  */
 

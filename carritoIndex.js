@@ -18,7 +18,6 @@ export const carritoIndex = (productoId) => {
                         <p>Precio: ${producto.precio}</p>
                         <p id="cantidad${producto.id}">Cantidad: ${producto.cantidad}</p>
                         <button></button>
-        
                         `;
         contenedorCarrito.appendChild(div);
 
