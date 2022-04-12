@@ -27,11 +27,9 @@ header h1{
 
 #producto-contenedor {
     display: grid;
-    gap: 1rem;
-    max-width: 70rem;
     margin: 90px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
