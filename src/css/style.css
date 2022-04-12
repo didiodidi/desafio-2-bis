@@ -34,7 +34,7 @@ header h1{
     flex-wrap: wrap;
 }
 
-.card {
+/* .card {
     max-width: 30%;
     padding: 10px;
     border-radius: 15px;
@@ -49,3 +49,26 @@ p{
     color: dodgerblue;
     position: unset;
 } 
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .2s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px ;
+}
+
+.modal-active .modal-carrito{
+    margin-top: 0;
+
+}
+
+.modal-carrito h3 {
+    color: dodgerblue;
+    padding-bottom: 5px;
+}
+
+ */
