@@ -1,0 +1,51 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+header{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    color: #000;
+}
+header nav {
+        position: relative;
+        right: 30px;
+}
+
+header h1{
+    position: relative;
+    left: 20px;
+}
+
+#producto-contenedor {
+    display: grid;
+    gap: 1rem;
+    max-width: 70rem;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+p{
+    line-height: 1.5px;
+}
+
+.card .card-image .card-title {
+    color: dodgerblue;
+    position: unset;
+} 
