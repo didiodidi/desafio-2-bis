@@ -17,4 +17,3 @@ const mostrarProductos = (productos) => {
 }) 
 };
 mostrarProductos(productos);
-

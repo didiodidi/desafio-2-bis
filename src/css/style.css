@@ -34,7 +34,7 @@ header h1{
     flex-wrap: wrap;
 }
 
-/* .card {
+.card {
     max-width: 30%;
     padding: 10px;
     border-radius: 15px;
@@ -63,7 +63,6 @@ p{
 
 .modal-active .modal-carrito{
     margin-top: 0;
-
 }
 
 .modal-carrito h3 {
@@ -71,4 +70,3 @@ p{
     padding-bottom: 5px;
 }
 
- */
