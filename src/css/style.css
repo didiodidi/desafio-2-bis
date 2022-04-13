@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    outline: 1px solid red;
 }
 
 header{
@@ -54,10 +53,9 @@ header h1{
   align-items: center;
   justify-content: center;
   position: fixed; 
-  outline: 1px solid red;
-  background-color: dodgerblue;
-  height: 20vh;
-  width: 50vw;
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
   visibility: hidden;
   transition: opacity 0.3s ease;
   border-radius: 10px ;
@@ -71,12 +69,29 @@ header h1{
   z-index: 5;
 }
 
+.modal-carrito{
+  width: 30rem;
+  height: 10rem;
+  background-color: whitesmoke;
+}
 
 
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
 
-
-
-
+.boton-eliminar {
+  background-color: white;
+  color: lightblue;
+  border: none;
+  font-size: 20px;
+}
 
 
 
@@ -199,12 +214,7 @@ header h1{
     border-left: 5px solid dodgerblue;
   }
   
-  .boton-eliminar {
-    background-color: white;
-    color: lightblue;
-    border: none;
-    font-size: 20px;
-  }
+  
   
   .boton-eliminar:hover {
     cursor: pointer;
