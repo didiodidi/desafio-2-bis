@@ -13,7 +13,7 @@ const mostrarProductos = (productos) => {
                                 <h5 class="card-title">${producto.nombre}</h5>
                                 <p class="card-text">Descripción:  ${producto.desc}</p>
                                 <p class="card-text">Precio: ${producto.precio}</p>
-                                <a href="#" class="btn btn-primary" id=boton${producto.id}>Comprar</a>
+                                <button class="btn btn-primary" id=boton${producto.id}>Comprar</button>
                             </div>
                         </div>`;
     contenedorProductos.appendChild(div);

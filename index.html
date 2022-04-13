@@ -29,8 +29,8 @@
                 <li class="nav-item">
                     <a class="nav-link text-body" href="#">Contacto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-body" href="#">Carrito <i class="fa-solid fa-cart-shopping"></i> <span id="contador-carrito">0</span> </a>
+                <li class="nav-item ">
+                    <button class="nav-link text-body " id="open" href="#">Carrito <i class="fa-solid fa-cart-shopping"></i> <span id="contador-carrito">0</span> </a>
                 </li>
             </ul>
         </nav>
@@ -39,12 +39,36 @@
     
 </main>
 
-<div class="modal-contenedor">
+<div class="modal-container" id="modal_container">
+    <div class="modal">
+        <h1>titulo</h1>
+        <p>
+            Loco Loco un poco más
+        </p>
+        <button id="close">Cerrar</button>
+    </div>
+</div>
 
-</div>  
 
 
 
+
+
+
+
+
+<!-- <div class="modal-contenedor">
+    <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+    </div>
+</div>   -->
+
+
+    <script src="modal.js" type="module"></script>
     <script src="stock.js" type="module"></script>
     <script src="carritoIndex.js" type="module"></script>
     <script src="App.js" type="module"></script>

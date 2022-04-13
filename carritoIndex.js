@@ -7,7 +7,7 @@ export const carritoIndex = (productoId) => {
     const contenedorCarrito = document.getElementById('carrito-contenedor');
 
     const renderProductosCarrito = () => {
-        let producto = productos.find ( producto => producto.id == productoId);
+        let producto = productos.find ( producto => productos.id == productoId);
         carritoDeCompras.push(producto);
 
         producto.cantidad =1;
@@ -17,7 +17,7 @@ export const carritoIndex = (productoId) => {
         div.innerHTML = `<p>${producto.nombre}</p>
                         <p>Precio: ${producto.precio}</p>
                         <p id="cantidad${producto.id}">Cantidad: ${producto.cantidad}</p>
-                        <button></button>
+                        <button id="eliminar${producto.id}"></button>
                         `;
         contenedorCarrito.appendChild(div);
 

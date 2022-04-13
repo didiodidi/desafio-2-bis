@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    
+    outline: 1px solid red;
 }
 
 header{
@@ -31,7 +31,7 @@ header h1{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
+} 
 
 
 .card .card-image .card-title {
@@ -45,36 +45,156 @@ header h1{
 }
 
 
-/* .card {
-    max-width: 30%;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+
+/* Modal */
+.modal-container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; 
+  outline: 1px solid red;
+  opacity: 0;
+  height: 20vh;
+  width: 50vw;
+  transition: opacity 0.3s ease;
+} 
+
+ .modal-container.show{
+  pointer-events: auto;
+  opacity: 1;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .modal-contenedor { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-p{
-    line-height: 1.5px;
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
 }
-
-
-
 .modal-carrito {
     position: relative;
     background-color: white;
     min-width: 500px;
     padding: 20px;
     margin-top: -100%;
-    transition: all .2s;
+    transition: all .5s;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px ;
-}
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+} */
 
-.modal-active .modal-carrito{
+/* .modal-active .modal-carrito {
     margin-top: 0;
-}
-
-.modal-carrito h3 {
+  }
+  
+  .modal-carrito h3 {
     color: dodgerblue;
     padding-bottom: 5px;
-}  */
+  }
+  
+  .modal-carrito  #btn-cerrar-carrito  {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: dodgerblue !important;
+    border: none;
+    background-color: white;
+  }
+  
+  .modal-carrito #btn-cerrar-carrito:hover {
+    cursor: pointer;
+  }
+  
+  .modal-carrito #btn-cerrar-carrito:focus {
+    outline: none;
+  }
+  
+  .modal-carrito .producto-precio {
+    padding-top: 10px;
+  } */
+  
+  /* .card .card-image .card-title {
+    color: dodgerblue;
+    position: unset;
+  }
+  
+  .productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .productoEnCarrito:hover {
+    border-left: 5px solid dodgerblue;
+  }
+  
+  .boton-eliminar {
+    background-color: white;
+    color: lightblue;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .boton-eliminar:hover {
+    cursor: pointer;
+  }
+  
+  .boton-eliminar:focus {
+    outline: none;
+  } */
+
 
