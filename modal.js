@@ -1,4 +1,44 @@
-const open = document.getElementById('open');
+const modalContenedor = document.querySelector('.modal-container');
+const abrirCarrito = document.getElementById('open');
+const cerrarCarrito = document.getElementById('cerrar');
+
+
+
+abrirCarrito.addEventListener('click', () => {
+    modalContenedor.classList.toggle('modal-active');
+})
+
+cerrarCarrito.addEventListener('click', () => {
+    modalContenedor.classList.remove('modal-active');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 
@@ -10,7 +50,7 @@ open.addEventListener('click', () =>{
 close.addEventListener('click', () =>{
     modal_container.classList.remove('show')
 })
-
+ */
 
 
 
