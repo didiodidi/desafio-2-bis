@@ -27,7 +27,7 @@ export const carritoIndex = (productoId) => {
     const contarProductosRepetidos = (prodRepetido) => {
         if (prodRepetido){
             prodRepetido.cantidad++
-            document.getElementById(`cantidad${prodRepetido.id}`).innerHTML = `<p id= cantidad${prodRepetido.id}>Cantidad: ${prodRepetido.cantidad}</p>`;
+            document.getElementById(`cantidad${prodRepetido.id}`).innerHTML = `<p id = cantidad${prodRepetido.id}>Cantidad: ${prodRepetido.cantidad}</p>`;
             actualizarCarrito(carritoDeCompras);
         }else{
             renderProductosCarrito(productoId);
@@ -36,18 +36,20 @@ export const carritoIndex = (productoId) => {
     renderProductosCarrito(); 
 
 
+
     const eliminarProductoCarrito = (productoId) => {
     let botonEliminar = document.getElementById(`eliminar${producto.id}`);
 
-    botonEliminar.addEventListener('click', () =>{
+    botonEliminar.addEventListener('click', () => {
         botonEliminar.parentElement.remove()
         carritoDeCompras = carritoDeCompras.filter(el => el.id != productoId);
         actualizarCarrito(carritoDeCompras);
     });
 
-    }
     contarProductosRepetidos(productoRepetido);
     eliminarProductoCarrito(productoId);
+    }
+    
 }
 
 
