@@ -5,8 +5,11 @@ let carritoDeCompras = [];
 
 export const carritoIndex = (productoId) => {
 
-    const contenedorCarrito = document.getElementById('carrito-contenedor')
-    
+    const contenedorCarrito = document.getElementById('carrito-contenedor');
+
+    //Recorre el array carrito de compras para encontrar el id del producto e igualarlo con el parametro de la función//
+    let productoRepetido = carritoDeCompras.find(producto => producto.id ==productoId);
+    //---------------//
     const renderProductosCarrito = () =>{
         let producto = productos.find( producto => producto.id == productoId );
         carritoDeCompras.push(producto);
@@ -25,6 +28,7 @@ export const carritoIndex = (productoId) => {
     }
 
     const contarProductosRepetidos = (prodRepetido) => {
+        console.log(prodRepetido)
         if (prodRepetido){
             prodRepetido.cantidad++
             document.getElementById(`cantidad${prodRepetido.id}`).innerHTML = `<p id = cantidad${prodRepetido.id}>Cantidad: ${prodRepetido.cantidad}</p>`;
@@ -33,23 +37,20 @@ export const carritoIndex = (productoId) => {
             renderProductosCarrito(productoId);
         }
     }
-    renderProductosCarrito(); 
-
+    
 
 
     const eliminarProductoCarrito = (productoId) => {
-    let botonEliminar = document.getElementById(`eliminar${producto.id}`);
+    let botonEliminar = document.getElementById(`eliminar${productoId}`);
 
     botonEliminar.addEventListener('click', () => {
-        botonEliminar.parentElement.remove()
+        botonEliminar.parentElement.remove();
         carritoDeCompras = carritoDeCompras.filter(el => el.id != productoId);
         actualizarCarrito(carritoDeCompras);
     });
-
+    }
     contarProductosRepetidos(productoRepetido);
     eliminarProductoCarrito(productoId);
-    }
-    
 }
 
 
